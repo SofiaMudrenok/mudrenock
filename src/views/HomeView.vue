@@ -1,18 +1,13 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="lg:mx-8">
+    <TextBanner/>
+    <CategoryBanner/>
+    <IndividualOrdersBanner/>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+import TextBanner from "@/components/Home/Banners/TextBanner"
+import CategoryBanner from "@/components/Home/Banners/CategoryBanner";
+import IndividualOrdersBanner from "@/components/Home/Banners/IndividualOrdersBanner";
 </script>
